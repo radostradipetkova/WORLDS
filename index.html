@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090f">
+  <meta name="description" content="One idea. Infinite ways to make it feel. Explore an interactive brand-world experiment by Radostina Petkova.">
+  <meta property="og:title" content="WORLDS — One idea. Infinite ways to feel it.">
+  <meta property="og:description" content="A little interactive experiment in making brands impossible to ignore. By Radostina Petkova.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://worlds-by-radostina.rayaatanasova638.chatgpt.site/assets/cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>WORLDS — One idea. Infinite ways to feel it.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css?v=2">
+  <script src="./renderer.js?v=2" defer></script>
+  <script src="./app.js?v=2" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="Worlds, back to top"><span class="logo-mark" aria-hidden="true">✳</span><span>WORLDS<span class="wordmark-period">.</span></span></a>
+    <span class="top-caption">AN INTERACTIVE<br>BRAND EXPERIMENT</span>
+    <div class="top-actions"><a class="top-link" href="#lab">THE LAB <span><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L19 5M7 5h12v12"/></svg></span></a><a class="top-contact" href="https://contra.com/radostina_petkowa_zqi7rnhj" target="_blank" rel="noopener noreferrer">LET'S TALK <span><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L19 5M7 5h12v12"/></svg></span></a></div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true"><canvas id="hero-canvas" width="900" height="900"></canvas></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-left">
+        <div class="eyebrow"><span class="live-dot"></span> A LITTLE EXPERIMENT IN BIG FEELINGS</div>
+        <h1 id="hero-title">DON'T JUST<br>MAKE A BRAND.<br><span>MAKE A</span><br><em>WORLD.</em></h1>
+        <p class="hero-copy">Ideas deserve more than a logo.<br>Give yours a world people want to step into.</p>
+        <a class="hero-button" href="#lab"><span>ENTER THE LAB</span><span class="button-orb"><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L19 5M7 5h12v12"/></svg></span></a>
+      </div>
+      <div class="hero-side" aria-hidden="true"><span>01 / 06</span><span class="hero-side-line"></span><span>THE POSSIBILITY IS THE POINT</span></div>
+      <div class="hero-bottom"><span>CREATIVE DIRECTION / DIGITAL EXPERIENCES</span><span class="hero-scroll">SCROLL TO EXPLORE <b>↓</b></span><span>A CONCEPT BY RADOSTINA PETKOVA</span></div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-inner"><span>GOOD IDEAS DESERVE A WORLD OF THEIR OWN</span><b>✳</b><span>GOOD IDEAS DESERVE A WORLD OF THEIR OWN</span><b>✳</b><span>GOOD IDEAS DESERVE A WORLD OF THEIR OWN</span><b>✳</b><span>GOOD IDEAS DESERVE A WORLD OF THEIR OWN</span><b>✳</b></div></div>
+
+    <section class="intro section-pad" aria-labelledby="intro-title">
+      <div class="section-kicker"><span>01 / THE IDEA</span><span>WHAT IF WE WENT FURTHER?</span></div>
+      <div class="intro-grid"><h2 id="intro-title">ONE IDEA.<br><span>INFINITE</span><br><em>FEELINGS.</em></h2><div class="intro-copy"><span class="intro-star" aria-hidden="true">✳</span><p>The same idea can feel wildly different depending on the world you build around it.</p><p class="muted">So I made a little playground to prove it. Pick a direction, give it a name, and watch your idea come to life.</p><a class="text-link" href="#lab">TRY IT YOURSELF <span>↘</span></a></div></div>
+    </section>
+
+    <section class="lab section-pad" id="lab" aria-labelledby="lab-title">
+      <div class="section-kicker"><span>02 / THE WORLD LAB</span><span>YOUR TURN TO PLAY ✳</span></div>
+      <div class="lab-heading"><div><div class="small-label">A BRAND EXPERIMENT / 001</div><h2 id="lab-title">GIVE YOUR<br>IDEA <em>A WORLD.</em></h2></div><p>Pick a direction. Choose an object. Make a little world that feels like you.</p></div>
+      <div class="lab-grid">
+        <div class="lab-controls">
+          <div class="control-heading"><span>01 / MAKE IT YOURS</span><span>↓</span></div>
+          <label for="brand-name">What should we call your idea?</label>
+          <div class="input-wrap"><input id="brand-name" type="text" maxlength="22" placeholder="YOUR IDEA" autocomplete="off" aria-describedby="name-hint"><span class="input-arrow" aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L19 5M7 5h12v12"/></svg></span></div>
+          <p id="name-hint" class="helper">A name, a word, a future obsession. Anything goes.</p>
+          <div class="control-heading second-heading"><span>02 / CHOOSE THE FEELING</span><span>↓</span></div>
+          <div class="world-options" role="group" aria-label="Choose a brand world">
+            <button class="world-option active" type="button" data-world="electric" aria-pressed="true"><span class="world-num">01</span><span class="world-text"><strong>ELECTRIC</strong><small>Bold. Digital. Limitless.</small></span><span class="world-swatch electric-swatch"></span><span class="world-arrow"><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L19 5M7 5h12v12"/></svg></span></button>
+            <button class="world-option" type="button" data-world="bloom" aria-pressed="false"><span class="world-num">02</span><span class="world-text"><strong>SUPERBLOOM</strong><small>Playful. Warm. Unapologetic.</small></span><span class="world-swatch bloom-swatch"></span><span class="world-arrow"><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L19 5M7 5h12v12"/></svg></span></button>
+            <button class="world-option" type="button" data-world="nocturne" aria-pressed="false"><span class="world-num">03</span><span class="world-text"><strong>AFTER HOURS</strong><small>Elegant. Magnetic. Mysterious.</small></span><span class="world-swatch nocturne-swatch"></span><span class="world-arrow"><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L19 5M7 5h12v12"/></svg></span></button>
+            <button class="world-option" type="button" data-world="citrus" aria-pressed="false"><span class="world-num">04</span><span class="world-text"><strong>CITRUS CLUB</strong><small>Sunny. Fresh. Energetic.</small></span><span class="world-swatch citrus-swatch"></span><span class="world-arrow"><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L19 5M7 5h12v12"/></svg></span></button>
+            <button class="world-option" type="button" data-world="ocean" aria-pressed="false"><span class="world-num">05</span><span class="world-text"><strong>DEEP BLUE</strong><small>Fluid. Clear. Immersive.</small></span><span class="world-swatch ocean-swatch"></span><span class="world-arrow"><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L19 5M7 5h12v12"/></svg></span></button>
+            <button class="world-option" type="button" data-world="studio" aria-pressed="false"><span class="world-num">06</span><span class="world-text"><strong>ATELIER</strong><small>Quiet. Tactile. Timeless.</small></span><span class="world-swatch studio-swatch"></span><span class="world-arrow"><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L19 5M7 5h12v12"/></svg></span></button>
+          </div>
+          <div class="control-heading shape-heading"><span>03 / CHOOSE YOUR OBJECT</span><span>↓</span></div>
+          <div class="option-pills" role="group" aria-label="Choose a mockup object">
+            <button class="pill active" type="button" data-object="bottle" aria-pressed="true">BOTTLE</button><button class="pill" type="button" data-object="can" aria-pressed="false">CAN</button><button class="pill" type="button" data-object="jar" aria-pressed="false">JAR</button><button class="pill" type="button" data-object="sculpture" aria-pressed="false">SCULPTURE</button>
+          </div>
+          <div class="control-heading finish-heading"><span>04 / PICK THE FINISH</span><span>↓</span></div>
+          <div class="option-pills" role="group" aria-label="Choose a material finish">
+            <button class="pill active" type="button" data-finish="glass" aria-pressed="true">GLASS</button><button class="pill" type="button" data-finish="chrome" aria-pressed="false">CHROME</button><button class="pill" type="button" data-finish="satin" aria-pressed="false">SATIN</button>
+          </div>
+          <div class="custom-color"><label for="object-color">Object color <span id="color-value">#5949FF</span></label><div><input type="color" id="object-color" value="#5949ff" aria-label="Choose a custom object color"><button type="button" id="reset-color">RESET</button></div></div>
+          <div class="light-control"><label for="lighting">Studio lighting <span id="lighting-value">70%</span></label><input type="range" id="lighting" min="35" max="100" value="70" step="5"></div>
+          <div class="share-controls"><button id="download" class="download-button" type="button">DOWNLOAD YOUR POSTER <span>↓</span></button><button id="share" class="share-button" type="button" aria-label="Copy a link to this world">COPY LINK <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L19 5M7 5h12v12"/></svg></button></div>
+          <p class="download-note">Made in your browser. No sign-up required.</p>
+          <p id="action-status" class="action-status" role="status" aria-live="polite"></p>
+        </div>
+        <div class="poster-area"><div class="poster-frame"><canvas id="poster" width="900" height="1125" role="img" aria-label="A customizable poster preview"></canvas><span class="poster-badge"><i></i> LIVE PREVIEW</span></div><div class="poster-under"><span>DESIGNED TO BE FELT</span><span id="poster-index">WORLD 01 / 06</span></div></div>
+      </div>
+    </section>
+
+    <section class="manifesto section-pad" aria-labelledby="manifesto-title">
+      <div class="section-kicker light"><span>03 / THE BIGGER PICTURE</span><span>MADE FOR WHAT'S NEXT</span></div>
+      <div class="manifesto-grid"><div><p class="manifesto-note">MORE THAN PRETTY PIXELS.</p><h2 id="manifesto-title">THE DETAILS<br>ARE THE <em>DIFFERENCE.</em></h2></div><p class="manifesto-copy">A memorable experience is what happens when a good idea, a clear story, and thoughtful execution meet.</p></div>
+      <div class="capabilities"><div><span>01</span><h3>Creative direction</h3><p>Turning an idea into a distinct visual world.</p></div><div><span>02</span><h3>Interactive design</h3><p>Making every scroll, click, and detail feel intentional.</p></div><div><span>03</span><h3>Creative development</h3><p>Bringing the experience to life across devices.</p></div></div>
+    </section>
+
+    <section class="contact section-pad" id="contact" aria-labelledby="contact-title"><div class="contact-star" aria-hidden="true">✳</div><div class="section-kicker"><span>04 / YOUR MOVE</span><span>LET'S MAKE SOMETHING MATTER</span></div><div class="contact-content"><p>HAVE AN IDEA?</p><h2 id="contact-title">LET'S BUILD<br>ITS <em>WORLD.</em></h2><a href="https://contra.com/radostina_petkowa_zqi7rnhj" target="_blank" rel="noopener noreferrer" class="contact-button">START A PROJECT <span><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L19 5M7 5h12v12"/></svg></span></a><span class="contact-sub">DESIGNED &amp; BUILT BY RADOSTINA PETKOVA</span></div></section>
+  </main>
+  <footer><a class="wordmark footer-logo" href="#top"><span class="logo-mark">✳</span> WORLDS<span class="wordmark-period">.</span></a><span>A SELF-INITIATED CREATIVE EXPERIMENT BY RADOSTINA PETKOVA</span><a href="https://contra.com/radostina_petkowa_zqi7rnhj" target="_blank" rel="noopener noreferrer">FIND ME ON CONTRA <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L19 5M7 5h12v12"/></svg></a></footer>
+  <button class="mobile-preview" id="mobile-preview" type="button" aria-label="View the full poster preview" hidden><canvas id="mini-poster" width="180" height="225" aria-hidden="true"></canvas><span>VIEW FULL ↑</span></button>
+</body>
+</html>
